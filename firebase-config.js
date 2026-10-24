@@ -1,10 +1,10 @@
 // Replace placeholders with values from Firebase Console > Project settings > Your apps > ReseauCedar > Config.
 export const firebaseConfig = {
-  apiKey: "PASTE_API_KEY_HERE",
-  authDomain: "PASTE_PROJECT_ID_HERE.firebaseapp.com",
-  databaseURL: "PASTE_REALTIME_DATABASE_URL_HERE",
-  projectId: "PASTE_PROJECT_ID_HERE",
-  storageBucket: "PASTE_STORAGE_BUCKET_HERE",
-  messagingSenderId: "PASTE_MESSAGING_SENDER_ID_HERE",
-  appId: "PASTE_APP_ID_HERE"
+  apiKey: "AIzaSyCVuvXqvoU_m8XmrHUeM0SFiJXrds8IXQQ",
+  authDomain: "reseaucedar-7d818.firebaseapp.com",
+  databaseURL: "https://reseaucedar-7d818-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "reseaucedar-7d818",
+  storageBucket: "reseaucedar-7d818.firebasestorage.app",
+  messagingSenderId: "741620524129",
+  appId: "1:741620524129:web:445d3c957e244463fb7620"
 };
