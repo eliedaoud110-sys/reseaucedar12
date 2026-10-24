@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123b32"><title>Réseau Cedar</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px Arial;background:#f3f7f5;color:#19332b}header{background:#123b32;color:white;padding:22px}main{max-width:850px;margin:auto;padding:18px}.card{background:white;padding:20px;border-radius:14px;margin-bottom:16px}label{display:block;margin:12px 0 6px}input,textarea,button{width:100%;padding:12px;border:1px solid #cad8d1;border-radius:9px;font:inherit}button{background:#176b50;color:white;border:0;margin-top:10px;font-weight:bold}.secondary{background:#e5f1eb;color:#19332b}.hidden{display:none!important}.muted{color:#61766d;font-size:14px}.message{border:1px solid #dce7e1;border-radius:10px;padding:12px;margin:10px 0}.status{white-space:pre-wrap;overflow-wrap:anywhere}
+</style></head><body>
+<header><h1>🌲 Réseau Cedar</h1><p>Your school community, connected.</p></header><main>
+<section class="card" id="authCard"><h2>Welcome</h2><p class="muted">Sign in or create an account.</p>
+<label for="displayName">Name (for new accounts)</label><input id="displayName" autocomplete="name" placeholder="Your name">
+<label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com">
+<label for="password">Password</label><input id="password" type="password" autocomplete="current-password" placeholder="At least 6 characters">
+<button id="loginBtn">Sign in</button><button id="registerBtn" class="secondary">Create account</button><p id="authStatus" class="status" role="status"></p></section>
+<section class="card hidden" id="appCard"><button id="logoutBtn" class="secondary">Sign out</button><h2>School messages</h2><p id="roleNotice" class="muted"></p>
+<div id="composer" class="hidden"><label for="messageText">Message</label><textarea id="messageText" rows="3" maxlength="3000" placeholder="Write a school message..."></textarea>
+<label for="messageType">Type</label><select id="messageType"><option value="announcement">Announcement</option><option value="link">External link (admin only)</option></select>
+<div id="linkFields" class="hidden"><label for="linkUrl">External URL</label><input id="linkUrl" type="url" placeholder="https://example.com"></div>
+<button id="sendBtn">Send message</button><p class="muted">File uploads and voice messages are not enabled yet; Cloud Storage requires separate setup and may require a paid Firebase plan.</p><p id="sendStatus" class="status"></p></div>
+<div id="messages">Loading…</div><p id="appStatus" class="status"></p></section></main><footer style="text-align:center;padding:18px;color:#61766d">Réseau Cedar</footer>
+<script type="module" src="./app.js"></script></body></html>
